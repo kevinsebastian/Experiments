@@ -9,10 +9,17 @@ ext.versions = [
 
         // Gradle plugins
         android : "2.3.3",
+        retrolambda : "3.7.0",
 
         // Libraries
+        butterknife      : "8.7.0",
         constraintLayout : "1.0.2",
-        supportAppCompat : "25.3.1",
+        dagger           : "2.11",
+        gson             : "2.4",
+        rxAndroid        : "2.0.1",
+        rxJava           : "2.0.1",
+        supportLibs      : "25.3.1",
+        timber           : "4.5.1",
 
         // Test libraries
         espresso : "2.2.2",
@@ -20,12 +27,24 @@ ext.versions = [
 ]
 
 ext.gradlePlugins = [
-        android : "com.android.tools.build:gradle:$versions.android"
+        android : "com.android.tools.build:gradle:$versions.android",
+        retrolambda: "me.tatarka:gradle-retrolambda:$versions.retrolambda"
 ]
 
 ext.libraries = [
-        constraintLayout : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
-        supportAppCompat : "com.android.support:appcompat-v7:$versions.supportAppCompat"
+        butterknife         : "com.jakewharton:butterknife:$versions.butterknife",
+        butterknifeCompiler : "com.jakewharton:butterknife-compiler:$versions.butterknife",
+        constraintLayout    : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+        dagger              : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler      : "com.google.dagger:dagger-compiler:$versions.dagger",
+        gson                : "com.google.code.gson:gson:$versions.gson",
+        rxAndroid           : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+        rxJava              : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        supportAnnotations  : "com.android.support:support-annotations:$versions.supportLibs",
+        supportAppCompat    : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportDesign       : "com.android.support:design:$versions.supportLibs",
+        supportRecyclerView : "com.android.support:recyclerview-v7:$versions.supportLibs",
+        timber              : "com.jakewharton.timber:timber:$versions.timber"
 ]
 
 ext.testLibraries = [

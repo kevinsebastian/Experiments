@@ -5,10 +5,12 @@ buildscript {
 
     repositories {
         jcenter()
+        mavenCentral()
     }
 
     dependencies {
         classpath gradlePlugins.android
+        classpath gradlePlugins.retrolambda
     }
 }
 
