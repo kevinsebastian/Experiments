@@ -8,7 +8,8 @@ ext.versions = [
         buildTools : "26.0.0",
 
         // Gradle plugins
-        android : "2.3.3",
+        android     : "2.3.3",
+        dexcount    : "0.6.1",
         retrolambda : "3.7.0",
 
         // Libraries
@@ -27,8 +28,9 @@ ext.versions = [
 ]
 
 ext.gradlePlugins = [
-        android : "com.android.tools.build:gradle:$versions.android",
-        retrolambda: "me.tatarka:gradle-retrolambda:$versions.retrolambda"
+        android     : "com.android.tools.build:gradle:$versions.android",
+        dexcount    : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$versions.dexcount",
+        retrolambda : "me.tatarka:gradle-retrolambda:$versions.retrolambda"
 ]
 
 ext.libraries = [
